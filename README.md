@@ -1,7 +1,6 @@
 🚀 Decentralized P2P Chat Application
 ---
 
-```md
 # 🔗 P2P Chat with Hyperswarm
 
 A **decentralized, peer-to-peer (P2P) chat application** built using **Hyperswarm**. No central server—just direct connections between peers! 🚀
