@@ -21,12 +21,18 @@ git clone https://github.com/your-username/decentralized-chat-app.git
 cd decentralized-chat-app
 ```
 
-### **2️⃣ Install Dependencies**
+### **2️⃣ 🔧 Setup Environment Variables**
+```sh
+1. Create a `.env` file in the project root.
+2. Add all the variables from .env.example to .env file.
+```
+
+### **3️⃣ Install Dependencies**
 ```sh
 npm install
 ```
 
-### **3️⃣ Run the Chat App**
+### **4️⃣ Run the Chat App**
 Open **two or more terminals** and run:
 ```sh
 node chat.js
