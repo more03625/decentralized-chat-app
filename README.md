@@ -67,11 +67,5 @@ Now, start chatting across terminals! 🎉
 - 🌍 **Multi-room support** (multiple chat topics)  
 - 💾 **Persistent chat history**  
 
----
-
-## 📜 License
-MIT License © 2025 Your Name
-
----
 
 🚀 **Start chatting now! No servers, no limits—just pure P2P magic!** 🔗✨  
