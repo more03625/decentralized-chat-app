@@ -1,6 +1,9 @@
 const Hyperswarm = require('hyperswarm');
 const readline = require('readline');
 const crypto = require('crypto');
+require('dotenv').config();
+
+const { encryptMessage, decryptMessage } = require('./utils');
 
 // Unique topic (same for all peers)
 const topic = crypto.createHash('sha256').update('p2p-chat-room').digest();
@@ -28,7 +31,8 @@ swarm.on('connection', (socket, details) => {
 
     // Listen for the incoming messages
     socket.on('data', (data) => {
-        console.log(`📩 ${data.toString()}`)
+        const decryptedMessage = decryptMessage(data.toString());
+        console.log(`📩 ${decryptedMessage}`)
     });
 
     socket.on('close', () => {
@@ -39,7 +43,8 @@ swarm.on('connection', (socket, details) => {
 
 function sendMessage() {
     rl.question('💬 Type a message:', (message) => {
-        peers.forEach((peer) => peer.write(message));
+        const encrypted = encryptMessage(message);
+        peers.forEach((peer) => peer.write(encrypted));
         sendMessage();
     })
 }
