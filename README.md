@@ -69,7 +69,7 @@ Now, start chatting across terminals! 🎉
 ---
 
 ## 🎯 Future Enhancements
-- 🔒 **Encryption** for secure messaging  
+- 🔒 **Encryption** for secure messaging ✅ 
 - 🌍 **Multi-room support** (multiple chat topics)  
 - 💾 **Persistent chat history**  
 
